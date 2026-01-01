@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Chat App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div>
+        <h1>Local Chat</h1>
+        <p class="subtitle">Single-page chat with localStorage</p>
+      </div>
+      <select id="userSelect">
+        <option value="You">You</option>
+        <option value="Friend">Friend</option>
+      </select>
+    </header>
+
+    <main class="chat-container">
+      <ul id="messages"></ul>
+    </main>
+
+    <form id="messageForm" autocomplete="off">
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="Type a message..."
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
